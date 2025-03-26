@@ -11,8 +11,9 @@ To address computational challenges inherent in dynamic graphs, we propose a sna
 
 2) Computation graph partitioning: Isolating subgraphs by strategically detaching embeddings from earlier races, thereby truncating backward passes and stabilizing training time.
 
-Although this partitioning limits long-term dependency learning, empirical results demonstrate that the truncated gradients still enable effective state propagation across races. Preliminary experiments shows the training time per epoch stabilized at O(1) after partitioning. While the project is ongoing, this work highlights the potential of DyGNNs for modeling sequential, interaction-heavy systems like competitive sports. 
+Although this partitioning limits long-term dependency learning, empirical results demonstrate that the truncated gradients still enable effective state propagation across races. Preliminary experiments shows the training time per epoch stabilized at O(1) after partitioning. While the project is ongoing, this work highlights the potential of DyGNNs for modeling sequential, interaction-heavy systems like competitive sports.
+
 <img width="383" alt="Figure of model architecture" src="https://github.com/user-attachments/assets/a8635fed-2a42-4794-b3ca-e173bedffeeb" />
+
 <img width="408" alt="Figure of GCNBlock" src="https://github.com/user-attachments/assets/cd2e4b93-9930-407a-9c28-10b375a942e2" />
 
-![Alt text](https://github.com/debrouchovea/horseracing-DGNN/blob/ed7cf9c487002c0fecc62b10fd1cf0fdff80a9b6/Figure%20of%20model%20architecture.png)
